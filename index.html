@@ -1,95 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sushmitha Vashist</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sushmitha Vashist · Software Engineer</title>
+<meta name="description" content="Sushmitha Vashist, Software Engineer building ML pipelines, backend systems, and full stack products. Open to SWE / Full Stack / MLE roles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>Sushmitha Vashist</h1>
-    <p class="tagline">MS Computer Engineering @ NYU &nbsp;·&nbsp; ML Engineer &nbsp;·&nbsp; Data & Backend Systems</p>
-    <div class="links">
-      <a href="https://github.com/5ushh" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/sushmitha-vashist-5a4a3022a" target="_blank">LinkedIn</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </header>
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker__track">
+    <span>OPEN TO WORK</span><span class="ticker__dot"></span>
+    <span>SOFTWARE ENGINEER</span><span class="ticker__dot"></span>
+    <span>FULL STACK</span><span class="ticker__dot"></span>
+    <span>MACHINE LEARNING ENGINEER</span><span class="ticker__dot"></span>
+    <span>AVAILABLE JUN 2026</span><span class="ticker__dot"></span>
+    <span>OPEN TO WORK</span><span class="ticker__dot"></span>
+    <span>SOFTWARE ENGINEER</span><span class="ticker__dot"></span>
+    <span>FULL STACK</span><span class="ticker__dot"></span>
+    <span>MACHINE LEARNING ENGINEER</span><span class="ticker__dot"></span>
+    <span>AVAILABLE JUN 2026</span><span class="ticker__dot"></span>
+  </div>
+</div>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>I'm a graduate student in Computer Engineering at NYU with hands on experience building ML pipelines, backend APIs, and data engineering systems. I've worked on everything from NLP based fraud detection to real time IoT sensor pipelines. I'm open to full time ML Engineer and Software Engineer roles from June 2026.</p>
+<!-- NAV -->
+<header class="topnav">
+  <a href="#top" class="topnav__mark">SUSHMITHA VASHIST</a>
+  <button class="topnav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="topnav__toggle-text">MENU</span>
+    <span class="topnav__toggle-icon"><span></span><span></span></span>
+  </button>
+</header>
+
+<!-- FULLSCREEN MENU -->
+<nav class="menu" id="menu">
+  <div class="menu__inner">
+    <a href="#work" class="menu__link"><span class="menu__num">1/</span>Work<span class="menu__arrow">→</span></a>
+    <a href="#projects" class="menu__link"><span class="menu__num">2/</span>Projects<span class="menu__arrow">→</span></a>
+    <a href="#skills" class="menu__link"><span class="menu__num">3/</span>Skills<span class="menu__arrow">→</span></a>
+    <a href="#education" class="menu__link"><span class="menu__num">4/</span>Education<span class="menu__arrow">→</span></a>
+    <a href="#achievements" class="menu__link"><span class="menu__num">5/</span>Achievements<span class="menu__arrow">→</span></a>
+    <a href="#contact" class="menu__link"><span class="menu__num">6/</span>Contact<span class="menu__arrow">→</span></a>
+  </div>
+  <div class="menu__footer">
+    <a href="mailto:sushmithavashiw@gmail.com">sushmithavashiw@gmail.com</a>
+    <a href="https://github.com/5ushh" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/sushmitha-vashist-5a4a3022a" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow reveal">MS Computer Engineering · NYU Tandon</p>
+    <h1 class="hero__title">
+      <span class="reveal hero__line hero__line--light">Hi, I'm</span>
+      <span class="reveal hero__line hero__line--huge">Sushmitha</span>
+    </h1>
+    <p class="hero__sub reveal">Software Engineer building ML pipelines, backend systems,
+    and the full stack products that sit on top of them.</p>
+
+    <div class="hero__bottom reveal">
+      <div class="hero__roles">
+        <span>SWE</span><span>Full Stack</span><span>MLE</span>
+      </div>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Say hi</a>
+        <a href="https://github.com/5ushh" target="_blank" rel="noopener" class="btn btn--ghost">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="scrollcue" aria-hidden="true"><span></span>Scroll</div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section__head reveal">
+      <span class="section__num">1/</span>
+      <h2>Work</h2>
+      <span class="section__count mono">02</span>
+    </div>
 
-    <div class="project">
-          <h3><a href="https://github.com/5ushh/nyc-transit-accessibility-navigator" target="_blank">NYC Transit Accessibility Navigator</a></h3>
-          <p>Wayfinding tool surfacing real ADA accessibility status for all 496 NYC subway stations from the MTA's public open dataset, with automatic routing to the nearest accessible alternative when a station isn't step free. Uses a Haversine distance algorithm to rank the 3 nearest fully accessible stations within a 1.5-mile radius.</p>
-          <div class="tech">React &nbsp;·&nbsp; FastAPI &nbsp;·&nbsp; Python &nbsp;·&nbsp; REST APIs</div>
+    <div class="rows">
+      <article class="row reveal">
+        <span class="row__index mono">01</span>
+        <div class="row__main">
+          <h3>Software Engineer</h3>
+          <p class="row__org mono">BigC Technologies · Bengaluru, India · Jul 2023 to Jun 2024</p>
         </div>
+        <p class="row__desc">Built and shipped ML pipelines end to end: data ingestion,
+        model training, and deployment on cloud infrastructure, with a focus on
+        scalability and cutting training time on production workloads.</p>
+        <div class="row__tags">
+          <span class="tag">Python</span><span class="tag">REST APIs</span><span class="tag">Cloud Deployment</span>
+        </div>
+      </article>
 
-    <div class="project">
-      <h3><a href="https://github.com/5ushh/automl-dashboard" target="_blank">AutoML Dashboard</a></h3>
-      <p>Interactive dashboard for automated machine learning workflows. Upload a dataset, run model selection, hyperparameter tuning, and visualize performance metrics, all without writing code.</p>
-      <div class="tech">Python &nbsp;·&nbsp; Streamlit &nbsp;·&nbsp; Scikit-learn &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; Matplotlib</div>
-    </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/5ushh/AI-Based-Misinformation-Detection" target="_blank">AI Based Misinformation Detection</a></h3>
-      <p>Human in the loop content moderation platform combining NLP classification, confidence based routing, a moderator dashboard, audit logging, and bias monitoring designed as a full socio technical system using a systems engineering lifecycle (NYU ECE GY 5213).</p>
-      <div class="tech">Python &nbsp;·&nbsp; FastAPI &nbsp;·&nbsp; NLP &nbsp;·&nbsp; Systems Engineering &nbsp;·&nbsp; REST APIs &nbsp;·&nbsp; HTML/CSS/JS</div>
-    </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/5ushh/devmart" target="_blank">DevMart</a></h3>
-      <p>Full stack developer tools marketplace where developers can browse, submit, and discover tools by category and tech stack. Built end to end with a REST API backend and responsive frontend.</p>
-      <div class="tech">JavaScript &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; REST APIs &nbsp;·&nbsp; HTML/CSS</div>
-    </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/5ushh/student-stress-predictor" target="_blank">Student Stress Predictor</a></h3>
-      <p>Classification pipeline predicting student stress levels from 5,000+ behavioral and academic records. Benchmarked 4 models using F1 score and ROC AUC, achieving 84% accuracy.</p>
-      <div class="tech">Python &nbsp;·&nbsp; Scikit-learn &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; SQL</div>
-    </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/5ushh/bigmart-sales-predictor" target="_blank">BigMart Sales Predictor</a></h3>
-      <p>End to end ML pipeline for retail sales forecasting on 8,000+ records. Achieved 18% accuracy improvement over baseline through feature engineering and hyperparameter tuning.</p>
-      <div class="tech">Python &nbsp;·&nbsp; Pandas &nbsp;·&nbsp; Scikit-learn &nbsp;·&nbsp; NumPy</div>
-    </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/5ushh/iot-health-monitor" target="_blank">IoT Health Monitor</a></h3>
-      <p>Distributed IoT pipeline streaming 2,000+ real time sensor events per day using ESP32 and MQTT, with sub 200ms end to end latency and AWS cloud ingestion.</p>
-      <div class="tech">ESP32 &nbsp;·&nbsp; MQTT &nbsp;·&nbsp; Python &nbsp;·&nbsp; AWS</div>
-    </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/5ushh/fake-account-detector" target="_blank">Fake Account Detector</a></h3>
-      <p>NLP based fraud detection system that classifies fake social media accounts with 84% accuracy across 10,000+ records. Developed as part of a KSCST funded research initiative.</p>
-      <div class="tech">Python &nbsp;·&nbsp; Scikit-learn &nbsp;·&nbsp; NLP &nbsp;·&nbsp; REST APIs</div>
-    </div>
-
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>I'm actively looking for full time ML Engineer and Software Engineer roles starting June 2026. Feel free to reach out.</p>
-    <div class="contact-links">
-      <a href="mailto:sushmithavashist@gmail.com">sushmithavashist@gmail.com</a>
-      <a href="https://linkedin.com/in/sushmitha-vashist-5a4a3022a" target="_blank">LinkedIn</a>
-      <a href="https://github.com/5ushh" target="_blank">GitHub</a>
+      <article class="row reveal">
+        <span class="row__index mono">02</span>
+        <div class="row__main">
+          <h3>AI/ML Intern</h3>
+          <p class="row__org mono">BigC Technologies · Bengaluru, India · Mar 2023 to Jun 2023</p>
+        </div>
+        <p class="row__desc">Developed and deployed supervised learning models,
+        including logistic regression and random forest, to detect patterns across
+        large scale datasets.</p>
+        <div class="row__tags">
+          <span class="tag">TensorFlow</span><span class="tag">SQL</span>
+        </div>
+      </article>
     </div>
   </section>
 
-  <footer>
-    <p>© 2026 Sushmitha Vashist</p>
-  </footer>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section__head reveal">
+      <span class="section__num">2/</span>
+      <h2>Projects</h2>
+      <span class="section__count mono">08</span>
+    </div>
 
+    <div class="rows rows--projects">
+
+      <a class="row row--link reveal" href="https://github.com/5ushh/nyc-transit-accessibility-navigator" target="_blank" rel="noopener">
+        <span class="row__index mono">01</span>
+        <div class="row__main">
+          <h3>NYC Transit Accessibility Navigator</h3>
+          <p class="row__desc">Wayfinding tool surfacing real ADA accessibility status
+          for all 496 NYC subway stations from MTA's open dataset, automatically
+          routing to the nearest accessible alternative using a Haversine ranking
+          algorithm.</p>
+          <div class="row__tags"><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">Python</span></div>
+        </div>
+        <span class="row__arrow">↗</span>
+      </a>
+
+      <a class="row row--link reveal" href="https://github.com/5ushh/automl-dashboard" target="_blank" rel="noopener">
+        <span class="row__index mono">02</span>
+        <div class="row__main">
+          <h3>AutoML Dashboard</h3>
+          <p class="row__desc">Interactive dashboard for automated ML workflows:
+          upload a dataset, run model selection and hyperparameter tuning, and
+          visualize performance, all without writing code.</p>
+          <div class="row__tags"><span class="tag">Streamlit</span><span class="tag">Scikit learn</span><span class="tag">Pandas</span></div>
+        </div>
+        <span class="row__arrow">↗</span>
+      </a>
+
+      <a class="row row--link reveal" href="https://github.com/5ushh/AI-Based-Misinformation-Detection" target="_blank" rel="noopener">
+        <span class="row__index mono">03</span>
+        <div class="row__main">
+          <h3>AI Based Misinformation Detection</h3>
+          <p class="row__desc">Human in the loop moderation platform combining NLP
+          classification, confidence based routing, a moderator dashboard, audit
+          logging, and bias monitoring, designed as a full socio technical system.</p>
+          <div class="row__tags"><span class="tag">FastAPI</span><span class="tag">NLP</span><span class="tag">Systems Design</span></div>
+        </div>
+        <span class="row__arrow">↗</span>
+      </a>
+
+      <a class="row row--link reveal" href="https://github.com/5ushh/devmart" target="_blank" rel="noopener">
+        <span class="row__index mono">04</span>
+        <div class="row__main">
+          <h3>DevMart</h3>
+          <p class="row__desc">Full stack developer tools marketplace where developers
+          browse, submit, and discover tools by category and stack, with a REST API
+          backend and a responsive frontend, built end to end.</p>
+          <div class="row__tags"><span class="tag">Node.js</span><span class="tag">REST APIs</span><span class="tag">JavaScript</span></div>
+        </div>
+        <span class="row__arrow">↗</span>
+      </a>
+
+      <a class="row row--link reveal" href="https://github.com/5ushh/student-stress-predictor" target="_blank" rel="noopener">
+        <span class="row__index mono">05</span>
+        <div class="row__main">
+          <h3>Student Stress Predictor</h3>
+          <p class="row__desc">Classification pipeline predicting student stress
+          levels from 5,000+ behavioral and academic records, benchmarking four
+          models on F1 and ROC AUC, hitting 84% accuracy.</p>
+          <div class="row__tags"><span class="tag">Scikit learn</span><span class="tag">SQL</span><span class="tag">Pandas</span></div>
+        </div>
+        <span class="row__arrow">↗</span>
+      </a>
+
+      <a class="row row--link reveal" href="https://github.com/5ushh/bigmart-sales-predictor" target="_blank" rel="noopener">
+        <span class="row__index mono">06</span>
+        <div class="row__main">
+          <h3>BigMart Sales Predictor</h3>
+          <p class="row__desc">End to end ML pipeline for retail sales forecasting on
+          8,000+ records, an 18% accuracy improvement over baseline through feature
+          engineering and tuning.</p>
+          <div class="row__tags"><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit learn</span></div>
+        </div>
+        <span class="row__arrow">↗</span>
+      </a>
+
+      <a class="row row--link reveal" href="https://github.com/5ushh/iot-health-monitor" target="_blank" rel="noopener">
+        <span class="row__index mono">07</span>
+        <div class="row__main">
+          <h3>IoT Health Monitor</h3>
+          <p class="row__desc">Distributed pipeline streaming 2,000+ real time sensor
+          events per day via ESP32 and MQTT, with sub 200ms end to end latency into
+          AWS.</p>
+          <div class="row__tags"><span class="tag">ESP32</span><span class="tag">MQTT</span><span class="tag">AWS</span></div>
+        </div>
+        <span class="row__arrow">↗</span>
+      </a>
+
+      <a class="row row--link reveal" href="https://github.com/5ushh/fake-account-detector" target="_blank" rel="noopener">
+        <span class="row__index mono">08</span>
+        <div class="row__main">
+          <h3>Fake Account Detector</h3>
+          <p class="row__desc">NLP based fraud detection classifying fake social
+          media accounts at 84% accuracy across 10,000+ records, built as part of a
+          KSCST funded research initiative.</p>
+          <div class="row__tags"><span class="tag">NLP</span><span class="tag">Scikit learn</span><span class="tag">REST APIs</span></div>
+        </div>
+        <span class="row__arrow">↗</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section__head reveal">
+      <span class="section__num">3/</span>
+      <h2>Skills</h2>
+      <span class="section__count mono">05</span>
+    </div>
+
+    <div class="skillcloud">
+      <div class="skillcloud__group reveal">
+        <span class="skillcloud__label mono">Languages</span>
+        <p class="skillcloud__words">Python / JavaScript / SQL / C++ / HTML &amp; CSS</p>
+      </div>
+      <div class="skillcloud__group reveal">
+        <span class="skillcloud__label mono">AI / ML</span>
+        <p class="skillcloud__words">TensorFlow / Scikit learn / NLP / Pandas / NumPy / Model Evaluation</p>
+      </div>
+      <div class="skillcloud__group reveal">
+        <span class="skillcloud__label mono">Backend &amp; APIs</span>
+        <p class="skillcloud__words">FastAPI / Node.js / REST APIs / Flask</p>
+      </div>
+      <div class="skillcloud__group reveal">
+        <span class="skillcloud__label mono">Data</span>
+        <p class="skillcloud__words">Data Pipelines / Feature Engineering / Streamlit / SQL</p>
+      </div>
+      <div class="skillcloud__group reveal">
+        <span class="skillcloud__label mono">Cloud &amp; Tools</span>
+        <p class="skillcloud__words">AWS / IBM Cloud / MQTT / Git &amp; GitHub</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section__head reveal">
+      <span class="section__num">4/</span>
+      <h2>Education</h2>
+      <span class="section__count mono">02</span>
+    </div>
+
+    <div class="rows">
+      <article class="row reveal">
+        <span class="row__index mono">01</span>
+        <div class="row__main">
+          <h3>New York University</h3>
+          <p class="row__org mono">MS, Computer Engineering · NYU Tandon · Sep 2024 to May 2026</p>
+        </div>
+        <p class="row__desc">Coursework spanning systems engineering, machine
+        learning, full stack development, and human centered design.</p>
+      </article>
+      <article class="row reveal">
+        <span class="row__index mono">02</span>
+        <div class="row__main">
+          <h3>Visvesvaraya Technological University</h3>
+          <p class="row__org mono">B.Tech, Information Science Engineering · Jun 2019 to Aug 2023</p>
+        </div>
+        <p class="row__desc">Coursework spanning data structures, algorithms,
+        databases, and software engineering. Led a KSCST funded research
+        initiative.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section" id="achievements">
+    <div class="section__head reveal">
+      <span class="section__num">5/</span>
+      <h2>Achievements</h2>
+      <span class="section__count mono">02</span>
+    </div>
+
+    <div class="rows">
+      <article class="row reveal">
+        <span class="row__index mono">01</span>
+        <div class="row__main">
+          <h3>Meta × Qualcomm Hackathon</h3>
+        </div>
+        <p class="row__desc">Built and shipped a project under time pressure
+        alongside engineers from across the industry.</p>
+      </article>
+      <article class="row reveal">
+        <span class="row__index mono">02</span>
+        <div class="row__main">
+          <h3>IBM Cloud · Journey to Cloud: Envisioning Your Solution</h3>
+        </div>
+        <p class="row__desc">IBM Academic Initiative certification, issued 31 Oct
+        2022. <a href="https://www.credly.com/go/5Nbi7nqg" target="_blank" rel="noopener" class="inline-link">Verify on Credly ↗</a></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section__head reveal">
+      <span class="section__num">6/</span>
+      <h2>Contact</h2>
+    </div>
+
+    <h3 class="contact__headline reveal">Got a bug, a role,<br>or a hello?</h3>
+
+    <div class="contact__wrap">
+      <form class="contact__form reveal" id="contactForm">
+        <label>
+          <span>Your email</span>
+          <input type="email" name="email" id="fromEmail" placeholder="you@company.com" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" id="messageBody" rows="4" placeholder="This is the place." required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--wide">Ship it →</button>
+        <p class="contact__note mono muted">Opens your email client, addressed to me.</p>
+      </form>
+
+      <div class="contact__direct reveal">
+        <a href="mailto:sushmithavashiw@gmail.com" class="contact__big">sushmithavashiw@gmail.com</a>
+        <a href="tel:+13475633377" class="contact__big">+1 347 563 3377</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">© 2026 Sushmitha Vashist</p>
+  <div class="footer__links">
+    <a href="https://github.com/5ushh" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/sushmitha-vashist-5a4a3022a" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:sushmithavashiw@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
